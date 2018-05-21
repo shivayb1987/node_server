@@ -1,0 +1,43 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "Sample Node App for authorization && authentication",
+  "main": "main.js",
+  "scripts": {
+    "start": "babel-node src/main.js",
+    "serve": "node dist/main.js",
+    "clean": "rimraf dist",
+    "babel-compile": "npm run clean && babel src -s -D -d dist",
+    "build": "npm run babel-compile",
+    "lint": "eslint src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Parmod Kumar",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.12.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "fs": "0.0.1-security",
+    "helmet": "^3.9.0",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "rotating-file-stream": "^1.3.4",
+    "winston": "^2.4.0",
+    "connect-redis": "^3.3.2"
+  }
+}
